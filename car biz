@@ -1,0 +1,19 @@
+import pandas as pd
+from ace_tools import display_dataframe_to_user
+
+# Creating a car flipping blueprint tracker
+data = {
+    "Vehicle Name": [],
+    "Purchase Price ($)": [],
+    "Repair Cost ($)": [],
+    "Detailing/Photo ($)": [],
+    "Listing Platforms": [],
+    "Listed Price ($)": [],
+    "Sold Price ($)": [],
+    "Profit ($)": [],
+    "Days to Flip": [],
+    "Notes": []
+}
+
+car_flipping_blueprint = pd.DataFrame(data)
+display_dataframe_to_user(name="Car Flipping Blueprint Tracker", dataframe=car_flipping_blueprint)
